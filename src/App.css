@@ -7,7 +7,10 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    width: 100vw;
+    width: 98vw;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
   }
   .navbar{
     overflow: hidden;
@@ -40,17 +43,21 @@
     text-decoration: none;
   }
   .container{
-      display: grid;
-     grid-template: repeat(auto ,1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
       /* height: 90vh;
       width: 90vw ; */
   }
   .card{
-      height: 2rem ;
-      width: 2rem;
+      height: 30rem ;
+      width: 20rem;   
   }
-  /* img{
-      height: 20vh;
-      width: 20vw;
-  }
-    */
+.cars{
+  height: 10rem ;
+  width: 10rem; 
+  margin: 10px;  
+}
+.cars:hover{
+  opacity: 0.9;
+}

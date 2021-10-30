@@ -7,8 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./compenents/Home";
 import Members from "./compenents/members";
-import Cars from "./compenents/cars";
-import About from "./compenents/about";
+import Cars from "./compenents/Cars";
 import './App.css'
 
 
@@ -20,16 +19,13 @@ function App() {
         <nav className='navbar'>
           <ul>
             <li className='home'>
-              <Link to="/Home">Home</Link>
+              <Link style={{color:'white' ,textDecoration :'none'}} to="/Home">Home</Link>
             </li>
             <li>
-              <Link to="/members">Members</Link>
+              <Link style={{color:'white' ,textDecoration :'none'}} to="/members">Members</Link>
             </li>
             <li>
-              <Link to="/cars">Cars</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
+              <Link style={{color:'white' ,textDecoration :'none'}} to="/Cars">Cars</Link>
             </li>
           </ul>
         </nav>
@@ -37,14 +33,11 @@ function App() {
           <Route path="/members">
             <Members />
           </Route>
-          <Route path="/cars">
+          <Route path="/Cars">
             <Cars />
           </Route>
           <Route path="/Home">
             <Home/>
-          </Route>
-          <Route path="/about">
-              <About/>
           </Route>
         </Switch>
       </div>
